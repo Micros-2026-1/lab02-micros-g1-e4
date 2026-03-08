@@ -6,10 +6,33 @@
 ## 1. Integrantes
 Joused Danilo Forero Rodriguez
 Laura Ximena Rojas Pachon
-## 1.1 Introduccion
+## 1.2 Materiales
+* Microcontrolador PIC18F45K22
+* Cristal de Cuarzo 16Mhz
+* Capacitor de 22pF
+* Led+Resistencia de 330Ω
+* Entorno de programacion "MPLAB X IDE"
+* Osciloscopio
+* Protoboard
+## 1.3 Introduccion
 En este documento se vera reflejada la practica realizada sobre las distintas configuraciones que tiene la PIC18F45K22,donde se abordan diferentes configuraciones para seleccionar cada tipo de oscilador dentro del mismo modulo ya anteriormente nombrado el cual nos permitira elejir y configurar la frecuencia con distintos tipos de circuitos.
 
 ## 2. Documentación
+PACTICA:Oscilador Interno:
+En esta practica se configuro la PIC18F45K22 mediante el programa de "MPLAB X IDE" para poder lograr que funcione el oscilador interno con una frecuencia de 16Mhz asi mismo se visualizo dicha frecuancia en relacion habilidando una salida del modulo para poder ver el resultado en un led acompañado de una resisitencia de 330Ω.
+## MONTAJE:
+*Se Utilizo el oscilador interno del modulo para asi mismo habilitar una salida para un led y una resistencia de 330Ω para limitar la corriente.
+*Se Utilizo como simulacion el programa de proteus y Mplab para poder configurar el modulo.
+PACTICA:Oscilador Externo(Cristal de Cuarzo):
+En esta practica se configuro la PIC18F45K22 mediante el programa de "MPLAB X IDE" para poder lograr que funcione el oscilador externo es decir se utilizo un oscilador externo ya que utilizamos un "Cristal de cuarzo" de 16Mhz y asi mismo poder comprender como el modulo puede interpretar un oscilador interno y uno externo.
+## MONTAJE:
+*Se Utilizo el oscilador externo de 16Mhz de cristal de caurzo para asi el modulo pueda interpretar el oscilador externo ademas de eso habilitamos una salida para poder visualizar el resutaldo con un led y resistencia de 330Ω para limitar la corriente.
+*Se Utilizo como simulacion el programa de proteus y Mplab para poder configurar el modulo.
+PACTICA:Oscilador RC:
+En esta practica se configuro la PIC18F45K22 mediante el programa de "MPLAB X IDE" para que el Microcontrolador pueda recibir las oscilaciones gracias al circuito rc donde logramos poder tener una frecuencia y asi mismo poder visualizarla en el led
+## MONTAJE:
+*Se Utilizo el oscilador rc realizado un una resistencia y un capacitor de 27pF ademas de eso la visualizacion de la frecuencia estaba en un led junto a una resistencia de 330Ω para limitar la corriente
+*Se Utilizo como simulacion el programa de proteus y Mplab para poder configurar el Microcontrolador.
 
 ### 2.1 Descripción del laboratorio
 
