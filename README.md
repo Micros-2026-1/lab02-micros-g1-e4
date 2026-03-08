@@ -4,6 +4,10 @@
 
 
 ## 1. Integrantes
+Joused Danilo Forero Rodriguez
+Laura Ximena Rojas Pachon
+##1.1 Inroduccion
+En este documento se vera reflejada la practica realizada sobre las distintas configuraciones que tiene la PIC18F45K22,donde se abordan diferentes configuraciones para seleccionar cada tipo de oscilador dentro del mismo modulo ya anteriormente nombrado el cual nos permitira elejir y configurar la frecuencia con distintos tipos de circuitos.
 
 ## 2. Documentación
 
