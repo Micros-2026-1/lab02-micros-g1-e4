@@ -35,8 +35,10 @@ En esta practica se configuro la PIC18F45K22 mediante el programa de "MPLAB X ID
 *Se Utilizo como simulacion el programa de proteus y Mplab para poder configurar el Microcontrolador.
 
 ### 2.1 Descripción del laboratorio
+Se debio configurar el Microcontrolador PIC18K45K22 de tal manera que se puedieran cambiar los modos del oscilador es decir se pudieran cambiar los modos de oscilador interno y esterno ademas de eso en la programacion adecuar el programa de tal manera que tambien habilite una salida el cual sera conectada junto aun led y resistencia poder visualizar la frecuencia que esta entregando junto a todo esto tomar varias mediciones tales como la del oscilador interno oscilado externo y oscilador rc toamr medidas con el oscilador y tener en cuenta las simulaciones para poder ver el resultado esperado.
 
 ### 2.2 Explicación del código implementado
+Se configuraba el OSCCON: OSCILLATOR CONTROL REGISTER de tal manera que dependiendo de los bits determinabamos como el Microcontrolador iba a interpretar las diferentes configuraciones es decir en el primer codigo se configuraba de tal manera que puediera utilizar el interno despues el externo y asi sucecivamente todo estba incorporado a un ciclo while el cual siempre estaba activo ademas de eso habilitabamos un pin de salida el cual posteriormente seria conectado junto a un red y resistencia claramente el pin de salida estaba en cooreclacon a la frecuencia que estuviera entregando el oscilador de las diferentes configuraciones
 
 ### 2.3 Análisis y comparación
 
@@ -44,16 +46,16 @@ En esta practica se configuro la PIC18F45K22 mediante el programa de "MPLAB X ID
 
 | Modo de oscilador | Freq. teórica Fosc | RA6 medible (CLKO)? | Freq. medida RA6 (Hz) | Freq. teórica RC0 (Hz)| Freq. medida RC0 (Hz) | Error RC0 (%) |  
 |------------------|------------------|---------------------|---------------|---------------------|---------------|---------------|
-| INTOSC (interno) | 16,000,000       | Sí                 |                     |                500                 |               |               | |
-| HS (cristal externo 16 MHz) | 16,000,000 | No |     NA      |               500                 |               |               |
+| INTOSC (interno) | 16,000,000       | Sí                 |                     |                500                 |              |               | |
+| HS (cristal externo 16 MHz) | 16,000,000 | No |     NA      |               500                 |               |        499.93       | 0.014%
 | RC externo       | ~16,000,000*     | No                                    |       N/A        | 500                 |               |               | |
 
 #### Tabla 2: Medición con calor
 
 | Modo de oscilador | Freq. teórica Fosc | RA6 medible (CLKO)? | Freq. medida RA6 (Hz) | Freq. teórica RC0 (Hz)| Freq. medida RC0 (Hz) | Error RC0 (%) |  
 |------------------|------------------|---------------------|---------------|---------------------|---------------|---------------|
-| INTOSC (interno) | 16,000,000       | Sí                 |                     |                500                 |               |               | |
-| HS (cristal externo 16 MHz) | 16,000,000 | No |     NA      |               500                 |               |               |
+| INTOSC (interno) | 16,000,000       | Sí                 |                     |                500                 |              |               | |
+| HS (cristal externo 16 MHz) | 16,000,000 | No |     NA      |               500                 |               |      500.58         |  0.116%
 | RC externo       | ~16,000,000*     | No                                    |       N/A        | 500                 |               |               | |
 
 #### Tabla 3: Deriva
