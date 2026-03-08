@@ -4,8 +4,8 @@
 
 
 ## 1. Integrantes
-Joused Danilo Forero Rodriguez
-Laura Ximena Rojas Pachon
+* Joused Danilo Forero Rodriguez
+* Laura Ximena Rojas Pachon
 ## 1.2 Materiales
 * Microcontrolador PIC18F45K22
 * Cristal de Cuarzo 16Mhz
