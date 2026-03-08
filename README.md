@@ -41,6 +41,12 @@ Se debio configurar el Microcontrolador PIC18K45K22 de tal manera que se puedier
 Se configuraba el OSCCON: OSCILLATOR CONTROL REGISTER de tal manera que dependiendo de los bits determinabamos como el Microcontrolador iba a interpretar las diferentes configuraciones es decir en el primer codigo se configuraba de tal manera que puediera utilizar el interno despues el externo y asi sucecivamente todo estba incorporado a un ciclo while el cual siempre estaba activo ademas de eso habilitabamos un pin de salida el cual posteriormente seria conectado junto a un red y resistencia claramente el pin de salida estaba en cooreclacon a la frecuencia que estuviera entregando el oscilador de las diferentes configuraciones
 
 ### 2.3 Análisis y comparación
+* Oscilador Interno
+  Se obsevo que se obtuvo una gran precicion con el oscilador ya que pudimos evidenciar que la frecuencia funcionaba como se esperaba reflejada en las mediciones tomadas del oscilaodor, ademas de eso obtuvimos una señal el cual era clara junto a lo que estabamos midiento y lo que estaba previsto antes con la simulacion en proteus.
+* Oscilador de Crital de Cuarzo
+  Analizamos el montaje de tal manera que pudimos evidenciar como el cristal de cuarzo tambien es de gran confianza en respecto a los valores entregador por la frecuencia ya que su porcentaje de error fue de menos del 0% lo cual nos indica que teine una confiabilidad igual al del oscilaodr interno ya que lo valores no cambian significativamente ademas de eso visualizamos una forma de onda esperada ya que concuerda con la simulacion realizada.
+* Oscilador RC
+  Observamos que puede llegar a ser mas complejo ya que el montaje puede dar valores un poco mas inexactos ya que depende mucho de la tolerancia de la resisencia y del capacitos debido a que es un oscilador mas inpreciso el cual se ha convertido en uno de los cuales ha sido mas dificil de elaborar a comparacion de los anteriores osciladores tambien obtuvimos concordancia junto a la simulacion realizada en proteus.
 
 #### Tabla 1: Medición en frío
 
