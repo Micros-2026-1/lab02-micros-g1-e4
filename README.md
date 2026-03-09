@@ -88,6 +88,10 @@ Se configuraba el OSCCON: OSCILLATOR CONTROL REGISTER de tal manera que dependie
 
 ### INTOSC (interno) 
 
+| Descripción Imagen 1 | Descripción Imagen 2 |
+| :---: | :---: |
+| ![Alt 1](scr/imagenes/interno.png) | ![Alt 2](scr/imagenes/internoCalor.png) |
+
 <table>
   <tr>
     <td><img src="scr/imagenes/interno.png" width="45%" /></td>
