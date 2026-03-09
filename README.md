@@ -68,9 +68,9 @@ Se configuraba el OSCCON: OSCILLATOR CONTROL REGISTER de tal manera que dependie
 
 | Modo de oscilador |RC0 deriva (Hz) |
 |------------------|--------------------|
-| INTOSC (interno) |                    |                
-| HS (cristal externo 16 MHz) |                |                |
-| RC externo       |                 |                
+| INTOSC (interno) |     0.035 Hz/°C   |                
+| HS (cristal externo 16 MHz) |       1.199 Hz/°C     |
+| RC externo       |        0.204 Hz/°C         |                
 
 
 <!-- Agregar tablas para valores usando PLL -->
