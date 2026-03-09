@@ -87,21 +87,19 @@ Se configuraba el OSCCON: OSCILLATOR CONTROL REGISTER de tal manera que dependie
 ## 2.5 Formas de onda
 
 ### INTOSC (interno) 
-
-| Descripción Imagen 1 | Descripción Imagen 2 |
+| Forma de Onda de Circuito interno en frio | Forma de Onda de Circuito interno con Calor|
 | :---: | :---: |
 | ![Alt 1](scr/imagenes/interno.png) | ![Alt 2](scr/imagenes/internoCalor.png) |
 
-<table>
-  <tr>
-    <td><img src="scr/imagenes/interno.png" width="45%" /></td>
-    <td><img src="scr/imagenes/internoCalor.png" width="45%" /></td>
-  </tr>
-</table>
-
 ### HS
+| Forma de Onda de Circuito con Cristal de Cuarzo en frio | Forma de Onda de Circuito con Cristal de Cuarzo con Calor|
+| :---: | :---: |
+| ![Alt 1](scr/imagenes/cristal.png) | ![Alt 2](scr/imagenes/cristalCalor.png) |
 
-## RC
+### RC
+| Forma de Onda de Circuito RC en frio | Forma de Onda de Circuito RC con Calor|
+| :---: | :---: |
+| ![Alt 1](scr/imagenes/rc.png) | ![Alt 2](scr/imagenes/RCcalor.png) |
 
 ## 3. Evidencias de implementación
 
