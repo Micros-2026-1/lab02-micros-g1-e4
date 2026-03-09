@@ -1,6 +1,4 @@
 #include <xc.h>
-#include <stdint.h>
-
 // ================= CONFIGURACIÓN =================
 
 // Cristal externo 16 MHz modo High Speed
