@@ -4,8 +4,8 @@
 
 
 ## 1. Integrantes
-* Joused Danilo Forero Rodriguez
-* Laura Ximena Rojas Pachon
+* [Joused Danilo Forero Rodriguez](https://github.com/jouseddanilo)
+* [Laura Ximena Rojas Pachon](https://github.com/LauXRS)
 ## 1.2 Materiales
 * Microcontrolador PIC18F45K22
 * Cristal de Cuarzo 16Mhz
@@ -77,8 +77,13 @@ Se configuraba el OSCCON: OSCILLATOR CONTROL REGISTER de tal manera que dependie
 
 <!-- Complemente con análisis de lo registrado en tablas -->
 
-## 2.4 Diagramas
-
+## 2.4 Simulación y Diagramas
+### Ocilador interno (INTOSC) 
+![pic](scr/imagenes/osc1.png)
+### Ocilador con cristal de Cuarzo (HSHP) 
+![pic](scr/imagenes/osc2.png)
+### Ocilador con circuito RC
+![pic](scr/imagenes/osc3.png)
 ## 2.5 Formas de onda
 
 ### INTOSC (interno) 
