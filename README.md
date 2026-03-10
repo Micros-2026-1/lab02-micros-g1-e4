@@ -52,17 +52,17 @@ Se configuraba el OSCCON: OSCILLATOR CONTROL REGISTER de tal manera que dependie
 
 | Modo de oscilador | Freq. teórica Fosc | RA6 medible (CLKO)? | Freq. medida RA6 (Hz) | Freq. teórica RC0 (Hz)| Freq. medida RC0 (Hz) | Error RC0 (%) |  
 |------------------|------------------|---------------------|---------------|---------------------|---------------|---------------|
-| INTOSC (interno) | 16,000,000       | Sí                 |     16MHz       |                500  |       499.8        |              |               | |
-| HS (cristal externo 16 MHz) | 16,000,000 | No |     NA      |               500                 |   499.8             |      |
-| RC externo       | ~16,000,000*     | No          |       N/A        | 500                 |  458.8             |               | |
+| INTOSC (interno) | 16,000,000       | Sí                 |     16MHz       |                500  |       499.8        |    0.04%          |               | |
+| HS (cristal externo 16 MHz) | 16,000,000 | No |     NA      |               500                 |   499.8             |    0.04%  |
+| RC externo       | ~16,000,000*     | No          |       N/A        | 500                 |  458.8             |    8.4%           | |
 
 #### Tabla 2: Medición con calor
 
 | Modo de oscilador | Freq. teórica Fosc | RA6 medible (CLKO)? | Freq. medida RA6 (Hz) | Freq. teórica RC0 (Hz)| Freq. medida RC0 (Hz) | Error RC0 (%) |  
 |------------------|------------------|---------------------|---------------|---------------------|---------------|---------------|
-| INTOSC (interno) | 16,000,000       | Sí                 |     16MHz        |   500          |     500.50         |               | |
-| HS (cristal externo 16 MHz) | 16,000,000 | No |     NA      |               500                 |    523.78         |          | 
-| RC externo       | ~16,000,000*     | No   |       N/A        | 500                 |       462.88        |               | |
+| INTOSC (interno) | 16,000,000       | Sí                 |     16MHz        |   500          |     500.50         |     0.1%          | |
+| HS (cristal externo 16 MHz) | 16,000,000 | No |     NA      |               500                 |    523.78         |      4.756%    | 
+| RC externo       | ~16,000,000*     | No   |       N/A        | 500                 |       462.88        |       7.42%        | |
 
 #### Tabla 3: Deriva
 
