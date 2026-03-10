@@ -102,22 +102,67 @@ Se configuraba el OSCCON: OSCILLATOR CONTROL REGISTER de tal manera que dependie
 | ![Alt 1](scr/imagenes/rc.png) | ![Alt 2](scr/imagenes/RCcalor.png) |
 
 ## 3. Evidencias de implementación
-<video width="600" controls>
-  <source src="scr/imagenes/video%20rc%20micro.mp4" type="video/mp4">
-</video>
+![Cuarzo micros](https://github.com/user-attachments/assets/e57cfc84-71be-4e0a-aa4c-ab37724a5d31)
+
+
+https://github.com/user-attachments/assets/5e49ec39-7eda-466f-80ca-6da6c83a12f1
+
+
+
+
+
+https://github.com/user-attachments/assets/a0e983f1-d345-4eac-99c7-926fe1bfddb9
+
+
+
+
 ## 4. Preguntas
 
 * ¿En qué modo se obtuvo la medición más cercana a la frecuencia teórica?
+   ##### RESPUESTA
+  En la medicion del Oscilador interno junto a la de cuarzo ya que tienen un porcentaje de error de 0.04% cabe aclarar que esta medicion fue tomada en frio.
 
 * ¿Fue posible evidenciar el fenómeno de deriva? ¿Qué factores podrían explicar la variación de frecuencia al calentar el PIC?
+   ##### RESPUESTA
+  Debido a que se calienta el Microcontrolador es decir se eleva la temperatura
 
 * ¿Cuál es más preciso en cuanto a frecuencia teórica vs. medida?
-
+   ##### RESPUESTA
+  el mas preciso en nuestra opinion es la del Oscilador Interno ya que no depende de otros elementos exteriores a comparacion de el Oscilador de Cuarzo
 
 * Explique cómo usar RC0 para estimar la frecuencia del oscilador cuando RA6 no está disponible.
-
+ ##### RESPUESTA
+  Para la PIC18F45K22 se puede usar un pin digital como RC0 para generar una señal conocida y asi poder evidenciar la frecuencia del Oscilador.
 * Si se quisiera duplicar la frecuencia del PIC usando PLL, ¿en qué modos se podría aplicar?
+  ##### RESPUESTA
+  se puede aplicar en el modo de Oscilador Interno ya que PLL puede llegar a funionar para multiplicar la frecuencia hasta en un x4.
 
 * Enliste ventajas y desventajas de cada modo.
+### RESPUESTA
+* Ventajas del oscilador interno:
+  Mayor control
+  Menor Porcentaje de error
+  No necesita componentes extra
+  Configuracion sencilla
+* Ventajas del oscilador de cristal de cuarzo:
+  Alta precisión y estabilidad en la frecuencia
+  Ideal para comunicaciones seriales precisas
+  Muy estable frente a temperatura y ruido
+  Adecuado para aplicaciones de tiempo exacto
+* Ventajas de oscilador RC
+  Muy económico
+  Circuito simple
+  Arranque rápido
+* Desventajas de oscilador interno:
+  Puede variar con temperatura o voltaje
+  No es ideal para comunicaciones muy precisas
+* Desventajas de oscilador de cristal de cuarzo:
+  Necesita componentes externos (cristal y capacitores)
+  Mayor costo
+  Ocupa pines del microcontrolador
+* Desventajas de oscilador RC:
+  Muy baja precisión en la frecuencia
+  Alta variación con temperatura y voltaje
+  No recomendable para comunicaciones o temporización precisa
 
 ## 5. Referencias
