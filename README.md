@@ -1,71 +1,168 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/KzqfxGd5)
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=22820226&assignment_repo_type=AssignmentRepo)
 # Lab02 - Caracterización de osciladores (externo vs. interno)
 
 
 ## 1. Integrantes
+* [Joused Danilo Forero Rodriguez](https://github.com/jouseddanilo)
+* [Laura Ximena Rojas Pachon](https://github.com/LauXRS)
+## 1.2 Materiales
+* Microcontrolador PIC18F45K22
+* Cristal de Cuarzo 16Mhz
+* Capacitor de 22pF
+* Led+Resistencia de 330Ω
+* Entorno de programacion "MPLAB X IDE"
+* Osciloscopio
+* Protoboard
+## 1.3 Introduccion
+En este documento se vera reflejada la practica realizada sobre las distintas configuraciones que tiene la PIC18F45K22,donde se abordan diferentes configuraciones para seleccionar cada tipo de oscilador dentro del mismo modulo ya anteriormente nombrado el cual nos permitira elejir y configurar la frecuencia con distintos tipos de circuitos.
 
 ## 2. Documentación
+# PACTICA:Oscilador Interno:
+En esta practica se configuro la PIC18F45K22 mediante el programa de "MPLAB X IDE" para poder lograr que funcione el oscilador interno con una frecuencia de 16Mhz asi mismo se visualizo dicha frecuancia en relacion habilidando una salida del modulo para poder ver el resultado en un led acompañado de una resisitencia de 330Ω.
+# Montaje:
+* Se Utilizo el oscilador interno del modulo para asi mismo habilitar una salida para un led y una resistencia de 330Ω para limitar la corriente.
+* Se Utilizo como simulacion el programa de proteus y Mplab para poder configurar el modulo.
+# PRACTICA:Oscilador Externo(Cristal de Cuarzo):
+En esta practica se configuro la PIC18F45K22 mediante el programa de "MPLAB X IDE" para poder lograr que funcione el oscilador externo es decir se utilizo un oscilador externo ya que utilizamos un "Cristal de cuarzo" de 16Mhz y asi mismo poder comprender como el modulo puede interpretar un oscilador interno y uno externo.
+# Montaje:
+* Se Utilizo el oscilador externo de 16Mhz de cristal de caurzo para asi el modulo pueda interpretar el oscilador externo ademas de eso habilitamos una salida para poder visualizar el resutaldo con un led y resistencia de 330Ω para limitar la corriente.
+* Se Utilizo como simulacion el programa de proteus y Mplab para poder configurar el modulo.
+# PACTICA:Oscilador RC:
+En esta practica se configuro la PIC18F45K22 mediante el programa de "MPLAB X IDE" para que el Microcontrolador pueda recibir las oscilaciones gracias al circuito rc donde logramos poder tener una frecuencia y asi mismo poder visualizarla en el led
+# Montaje:
+* Se Utilizo el oscilador rc realizado un una resistencia y un capacitor de 27pF ademas de eso la visualizacion de la frecuencia estaba en un led junto a una resistencia de 330Ω para limitar la corriente
+* Se Utilizo como simulacion el programa de proteus y Mplab para poder configurar el Microcontrolador.
 
 ### 2.1 Descripción del laboratorio
+Se debio configurar el Microcontrolador PIC18K45K22 de tal manera que se puedieran cambiar los modos del oscilador es decir se pudieran cambiar los modos de oscilador interno y esterno ademas de eso en la programacion adecuar el programa de tal manera que tambien habilite una salida el cual sera conectada junto aun led y resistencia poder visualizar la frecuencia que esta entregando junto a todo esto tomar varias mediciones tales como la del oscilador interno oscilado externo y oscilador rc toamr medidas con el oscilador y tener en cuenta las simulaciones para poder ver el resultado esperado.
 
 ### 2.2 Explicación del código implementado
+Se configuraba el OSCCON: OSCILLATOR CONTROL REGISTER de tal manera que dependiendo de los bits determinabamos como el Microcontrolador iba a interpretar las diferentes configuraciones es decir en el primer codigo se configuraba de tal manera que puediera utilizar el interno despues el externo y asi sucecivamente todo estba incorporado a un ciclo while el cual siempre estaba activo ademas de eso habilitabamos un pin de salida el cual posteriormente seria conectado junto a un red y resistencia claramente el pin de salida estaba en cooreclacon a la frecuencia que estuviera entregando el oscilador de las diferentes configuraciones
 
 ### 2.3 Análisis y comparación
+* Oscilador Interno
+  Se obsevo que se obtuvo una gran precicion con el oscilador ya que pudimos evidenciar que la frecuencia funcionaba como se esperaba reflejada en las mediciones tomadas del oscilaodor, ademas de eso obtuvimos una señal el cual era clara junto a lo que estabamos midiento y lo que estaba previsto antes con la simulacion en proteus.
+* Oscilador de Crital de Cuarzo
+  Analizamos el montaje de tal manera que pudimos evidenciar como el cristal de cuarzo tambien es de gran confianza en respecto a los valores entregador por la frecuencia ya que su porcentaje de error fue de menos del 0% lo cual nos indica que teine una confiabilidad igual al del oscilaodr interno ya que lo valores no cambian significativamente ademas de eso visualizamos una forma de onda esperada ya que concuerda con la simulacion realizada.
+* Oscilador RC
+  Observamos que puede llegar a ser mas complejo ya que el montaje puede dar valores un poco mas inexactos ya que depende mucho de la tolerancia de la resisencia y del capacitos debido a que es un oscilador mas inpreciso el cual se ha convertido en uno de los cuales ha sido mas dificil de elaborar a comparacion de los anteriores osciladores tambien obtuvimos concordancia junto a la simulacion realizada en proteus.
 
 #### Tabla 1: Medición en frío
 
 | Modo de oscilador | Freq. teórica Fosc | RA6 medible (CLKO)? | Freq. medida RA6 (Hz) | Freq. teórica RC0 (Hz)| Freq. medida RC0 (Hz) | Error RC0 (%) |  
 |------------------|------------------|---------------------|---------------|---------------------|---------------|---------------|
-| INTOSC (interno) | 16,000,000       | Sí                 |                     |                500                 |               |               | |
-| HS (cristal externo 16 MHz) | 16,000,000 | No |     NA      |               500                 |               |               |
-| RC externo       | ~16,000,000*     | No                                    |       N/A        | 500                 |               |               | |
+| INTOSC (interno) | 16,000,000       | Sí                 |     16MHz       |                500  |       499.8        |    0.04%          |               | |
+| HS (cristal externo 16 MHz) | 16,000,000 | No |     NA      |               500                 |   499.8             |    0.04%  |
+| RC externo       | ~16,000,000*     | No          |       N/A        | 500                 |  458.8             |    8.4%           | |
 
 #### Tabla 2: Medición con calor
 
 | Modo de oscilador | Freq. teórica Fosc | RA6 medible (CLKO)? | Freq. medida RA6 (Hz) | Freq. teórica RC0 (Hz)| Freq. medida RC0 (Hz) | Error RC0 (%) |  
 |------------------|------------------|---------------------|---------------|---------------------|---------------|---------------|
-| INTOSC (interno) | 16,000,000       | Sí                 |                     |                500                 |               |               | |
-| HS (cristal externo 16 MHz) | 16,000,000 | No |     NA      |               500                 |               |               |
-| RC externo       | ~16,000,000*     | No                                    |       N/A        | 500                 |               |               | |
+| INTOSC (interno) | 16,000,000       | Sí                 |     16MHz        |   500          |     500.50         |     0.1%          | |
+| HS (cristal externo 16 MHz) | 16,000,000 | No |     NA      |               500                 |    523.78         |      4.756%    | 
+| RC externo       | ~16,000,000*     | No   |       N/A        | 500                 |       462.88        |       7.42%        | |
 
 #### Tabla 3: Deriva
 
 | Modo de oscilador |RC0 deriva (Hz) |
 |------------------|--------------------|
-| INTOSC (interno) |                    |                
-| HS (cristal externo 16 MHz) |                |                |
-| RC externo       |                 |                
+| INTOSC (interno) |     0.035 Hz/°C   |                
+| HS (cristal externo 16 MHz) |       1.199 Hz/°C     |
+| RC externo       |        0.204 Hz/°C         |                
 
 
 <!-- Agregar tablas para valores usando PLL -->
 
 <!-- Complemente con análisis de lo registrado en tablas -->
 
-## 2.4 Diagramas
-
+## 2.4 Simulación y Diagramas
+### Ocilador interno (INTOSC) 
+![pic](scr/imagenes/osc1.png)
+### Ocilador con cristal de Cuarzo (HSHP) 
+![pic](scr/imagenes/osc2.png)
+### Ocilador con circuito RC
+![pic](scr/imagenes/osc3.png)
 ## 2.5 Formas de onda
 
 ### INTOSC (interno) 
+| Forma de Onda de Circuito interno en frio | Forma de Onda de Circuito interno con Calor|
+| :---: | :---: |
+| ![Alt 1](scr/imagenes/interno.png) | ![Alt 2](scr/imagenes/internoCalor.png) |
 
+### Cristal de Cuarzo
+| Forma de Onda de Circuito con Cristal de Cuarzo en frio | Forma de Onda de Circuito con Cristal de Cuarzo con Calor|
+| :---: | :---: |
+| ![Alt 1](scr/imagenes/cristal.png) | ![Alt 2](scr/imagenes/cristalCalor.png) |
 
-### HS
-
-## RC
+### RC
+| Forma de Onda de Circuito RC en frio | Forma de Onda de Circuito RC con Calor|
+| :---: | :---: |
+| ![Alt 1](scr/imagenes/rc.png) | ![Alt 2](scr/imagenes/RCcalor.png) |
 
 ## 3. Evidencias de implementación
+![Cuarzo micros](https://github.com/user-attachments/assets/e57cfc84-71be-4e0a-aa4c-ab37724a5d31)
+
+
+https://github.com/user-attachments/assets/5e49ec39-7eda-466f-80ca-6da6c83a12f1
+
+
+
+
+
+https://github.com/user-attachments/assets/a0e983f1-d345-4eac-99c7-926fe1bfddb9
+
+
+
 
 ## 4. Preguntas
 
 * ¿En qué modo se obtuvo la medición más cercana a la frecuencia teórica?
+   ##### RESPUESTA
+  En la medicion del Oscilador interno junto a la de cuarzo ya que tienen un porcentaje de error de 0.04% cabe aclarar que esta medicion fue tomada en frio.
 
 * ¿Fue posible evidenciar el fenómeno de deriva? ¿Qué factores podrían explicar la variación de frecuencia al calentar el PIC?
+   ##### RESPUESTA
+  Debido a que se calienta el Microcontrolador es decir se eleva la temperatura
 
 * ¿Cuál es más preciso en cuanto a frecuencia teórica vs. medida?
-
+   ##### RESPUESTA
+  el mas preciso en nuestra opinion es la del Oscilador Interno ya que no depende de otros elementos exteriores a comparacion de el Oscilador de Cuarzo
 
 * Explique cómo usar RC0 para estimar la frecuencia del oscilador cuando RA6 no está disponible.
-
+ ##### RESPUESTA
+  Para la PIC18F45K22 se puede usar un pin digital como RC0 para generar una señal conocida y asi poder evidenciar la frecuencia del Oscilador.
 * Si se quisiera duplicar la frecuencia del PIC usando PLL, ¿en qué modos se podría aplicar?
+  ##### RESPUESTA
+  se puede aplicar en el modo de Oscilador Interno ya que PLL puede llegar a funionar para multiplicar la frecuencia hasta en un x4.
 
 * Enliste ventajas y desventajas de cada modo.
+### RESPUESTA
+* Ventajas del oscilador interno:
+  Mayor control
+  Menor Porcentaje de error
+  No necesita componentes extra
+  Configuracion sencilla
+* Ventajas del oscilador de cristal de cuarzo:
+  Alta precisión y estabilidad en la frecuencia
+  Ideal para comunicaciones seriales precisas
+  Muy estable frente a temperatura y ruido
+  Adecuado para aplicaciones de tiempo exacto
+* Ventajas de oscilador RC
+  Muy económico
+  Circuito simple
+  Arranque rápido
+* Desventajas de oscilador interno:
+  Puede variar con temperatura o voltaje
+  No es ideal para comunicaciones muy precisas
+* Desventajas de oscilador de cristal de cuarzo:
+  Necesita componentes externos (cristal y capacitores)
+  Mayor costo
+  Ocupa pines del microcontrolador
+* Desventajas de oscilador RC:
+  Muy baja precisión en la frecuencia
+  Alta variación con temperatura y voltaje
+  No recomendable para comunicaciones o temporización precisa
 
 ## 5. Referencias
