@@ -102,7 +102,9 @@ Se configuraba el OSCCON: OSCILLATOR CONTROL REGISTER de tal manera que dependie
 | ![Alt 1](scr/imagenes/rc.png) | ![Alt 2](scr/imagenes/RCcalor.png) |
 
 ## 3. Evidencias de implementación
-[Ver video](scr/imagenes/video%20rc%20micro.mp4)
+<video width="600" controls>
+  <source src="scr/imagenes/video%20rc%20micro.mp4" type="video/mp4">
+</video>
 ## 4. Preguntas
 
 * ¿En qué modo se obtuvo la medición más cercana a la frecuencia teórica?
